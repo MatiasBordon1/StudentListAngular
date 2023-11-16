@@ -328,7 +328,6 @@
     </svg>
 
   </div>
-  <app-estudiantes-listado></app-estudiantes-listado>
 
   <input type="hidden" #selection>
 
@@ -338,6 +337,10 @@
   </svg>
 
 </div>
-<div class="container mt-4">
+<div>
+<ul>
+  <li><a [routerLink]="['/EstudiantesListadoComponent']">Lista Estudiante</a></li>
+  <li><a [routerLink]="['/RoutingTestComponent']">routing</a></li>
+</ul>
 <router-outlet></router-outlet>
 </div>
